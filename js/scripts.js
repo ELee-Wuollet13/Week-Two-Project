@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("form#intake").submit(function(event) {
+  $("form#intake").submit(function() {
     let num1 = parseInt($("input:radio[name=color]:checked").val());
     let num2 = parseInt($("input:radio[name=hand]:checked").val());
     let num3 = parseInt($("input:radio[name=pet]:checked").val());
@@ -8,13 +8,16 @@ $(document).ready(function() {
     let num = (num1 += num2 += num3 += num4 += num5)
 
     if (num > 2) {
-      $('.result').show(javascript);
+      console.log("hi")
+      // $('.result').show(javascript);
     } else if (num < 2 && num > -2) {
-      $('.result').show(ruby)
+      console.log("mid")
+      // $('.result').show(ruby)
     } else {
-      $('.result').show(c)
+      console.log("low")
+      // $('.result').show(c)
     }
-    console.log(numTotal)
+    console.log(num)
 
     event.preventDefault();
   });
