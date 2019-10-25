@@ -10,13 +10,14 @@ $(document).ready(function() {
 
     if (num > 2) {
       console.log("hi")
-      $('.result').show(".javascript");
+      $('.result').html("javascript!")
     } else if (num < 2 && num > -2) {
       console.log("mid")
-      $('.result').show(".ruby")
+      $('.result').html("Ruby!")
+
     } else {
       console.log("low")
-      $('.result').show(".c")
+      $('.result').html("C#!")
     }
     console.log(num)
 
