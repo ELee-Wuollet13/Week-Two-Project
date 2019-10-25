@@ -9,13 +9,13 @@ $(document).ready(function() {
 
     if (num > 2) {
       console.log("hi")
-      // $('.result').show(javascript);
+      $('.result').show(".javascript");
     } else if (num < 2 && num > -2) {
       console.log("mid")
-      // $('.result').show(ruby)
+      $('.result').show(".ruby")
     } else {
       console.log("low")
-      // $('.result').show(c)
+      $('.result').show(".c")
     }
     console.log(num)
 
