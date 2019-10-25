@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("form#intake").submit(function() {
-    $("results").hide();
+    $("results").hide(".javascript .ruby .c");
     let num1 = parseInt($("input:radio[name=color]:checked").val());
     let num2 = parseInt($("input:radio[name=hand]:checked").val());
     let num3 = parseInt($("input:radio[name=pet]:checked").val());
