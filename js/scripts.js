@@ -5,14 +5,14 @@ $(document).ready(function() {
     let num3 = parseInt($("input:radio[name=pet]:checked").val());
     let num4 = parseInt($("input:radio[name=drink]:checked").val());
     let num5 = parseInt($("input:radio[name=career]:checked").val());
-    let numTotal = (num1 + num2 + num3 + num4 + num5)
+    let num = (num1 += num2 += num3 += num4 += num5)
 
-    if (numTotal => 2) {
+    if (num > 2) {
       $('.result').show(javascript);
-    } else if (numTotal < 2 && num total > -2) {
+    } else if (num < 2 && num > -2) {
       $('.result').show(ruby)
     } else {
-      $('.result').show(c#)
+      $('.result').show(c)
     }
     console.log(numTotal)
 
