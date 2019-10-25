@@ -6,7 +6,8 @@ $(document).ready(function() {
     let num3 = parseInt($("input:radio[name=pet]:checked").val());
     let num4 = parseInt($("input:radio[name=drink]:checked").val());
     let num5 = parseInt($("input:radio[name=career]:checked").val());
-    let num = (num1 += num2 += num3 += num4 += num5)
+    let num = (num1 += num2 += num3 += num4 += num5);
+    
 
     if (num > 2) {
       console.log("hi")
